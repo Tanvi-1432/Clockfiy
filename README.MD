@@ -1,4 +1,4 @@
-## A challange project where I had to make a responsive pricing plan webpage within an hour and a half.
+## A challange project where I had to make a responsive pricing plan webpage from a Figma design within an hour and a half.
 
 ### Tools used : 
 - HTML
