@@ -1,0 +1,357 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    margin: 0 1rem;
+    background-color: rgb(235, 239, 242);
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* main */
+
+/* header */
+main {
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin: 2rem;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    letter-spacing: .5px;
+    margin: .5rem;
+}
+
+.header p {
+    color: rgb(98, 95, 95);
+}
+
+
+/* billing button */
+
+
+.billing-button {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.billing-button button {
+    width: 100%;
+    font-size: .7rem;
+    padding: .8rem;
+    border: 1px solid rgb(220, 219, 219);
+    letter-spacing: .3px;
+    cursor: pointer;
+}
+
+.monthly-billing {
+    background-color: white;
+    border-radius: .2rem 0 0 .2rem;
+}
+
+.annual-billing {
+    background-color: rgb(215, 215, 215);
+    border-radius: 0 .2rem .2rem 0;
+}
+
+.annual-billing span {
+    font-size: .6rem;
+    padding: .3rem;
+    background-color: rgb(81, 177, 81);
+    color: white;
+}
+
+
+/* main content */
+
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 1.5rem auto;
+}
+
+.container {
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    padding: 1rem;
+    background-color: white;
+}
+
+.container h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container h4 {
+    text-align: center;
+    margin: 1rem;
+    font-size: .9rem;
+}
+
+.price {
+    font-size: 1rem;
+    margin: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: .2rem;
+}
+
+.dollar {
+    font-size: 2rem;
+    font-weight: 500;
+    display: block;
+    transform: translateY(-.2rem);
+}
+
+.container h5 {
+    font-size: .8rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.upgrade-btn button {
+    margin: 1rem 0;
+    padding: .7rem;
+    width: 100%;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.upgrade-btn button:hover {
+    opacity: .8;
+}
+
+.tier-benefits {
+    font-size: .8rem;
+    color: rgb(98, 95, 95);
+    letter-spacing: .3px;
+}
+
+.tier-benefits li {
+    padding: .3rem 0;
+}
+
+.private-server {
+    text-align: center;
+    border-top: 1px solid rgb(235, 239, 242);
+    margin-top: 1.5rem;
+    letter-spacing: .4px;
+    padding: 1rem;
+}
+
+.private-server p {
+    font-size: .9rem;
+    padding: 1rem;
+}
+
+.private-server a {
+    text-decoration: none;
+    font-size: .9rem;
+    color: blueviolet;
+}
+
+.basic {
+    border-color: rgb(58, 59, 72);
+}
+
+.basic button {
+    background-color: rgb(58, 59, 72);
+}
+
+.standard {
+    border-color: rgb(19, 128, 223);
+}
+
+.standard button {
+    background-color: rgb(23, 127, 218);
+}
+
+.pro {
+    border-color: rgb(231, 92, 92);
+}
+
+.pro button {
+    background-color: rgb(231, 92, 92);
+}
+
+.enterprise {
+    border-color: blueviolet;
+}
+
+.enterprise button {
+    background-color: blueviolet;
+}
+
+
+@media only screen and (min-width: 767px) {
+    .main-content {
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr 1fr;
+        justify-content: center;
+        max-width: 720px;
+        margin-top: 3rem;
+    }
+
+    .container {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-content {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        max-width: 1200px;
+        gap: 0;
+    }
+
+    .container {
+        transition: .3s ease-in-out;
+    }
+
+    .container:hover {
+        transform: scale(1.1);
+    }
+}
